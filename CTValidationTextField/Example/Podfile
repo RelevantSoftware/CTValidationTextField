@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CTValidationTextField_Example' do
+  pod 'CTValidationTextField', :path => '../'
+
+  target 'CTValidationTextField_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

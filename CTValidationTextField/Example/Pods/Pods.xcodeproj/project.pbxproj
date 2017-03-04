@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05452147370F3ABCD54C7FF53274F8AA /* CTValidationTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 482ED7CD792178B07701F742B3A3BDD4 /* CTValidationTextField-dummy.m */; };
+		2FBE98EE1E6AD53800796D4F /* CTValidationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE98ED1E6AD53800796D4F /* CTValidationTextField.swift */; };
+		2FBE98F31E6AD57A00796D4F /* LettersRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE98F21E6AD57A00796D4F /* LettersRule.swift */; };
+		2FBE98F51E6AD58B00796D4F /* NumbersRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE98F41E6AD58B00796D4F /* NumbersRule.swift */; };
+		2FBE98F71E6AD59D00796D4F /* EmailRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE98F61E6AD59D00796D4F /* EmailRule.swift */; };
+		2FBE98F91E6AD5AF00796D4F /* SymbolsRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE98F81E6AD5AF00796D4F /* SymbolsRule.swift */; };
+		2FBE98FB1E6AD5BF00796D4F /* MinLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE98FA1E6AD5BF00796D4F /* MinLengthRule.swift */; };
+		2FBE98FE1E6AD68D00796D4F /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE98FD1E6AD68D00796D4F /* ValidationError.swift */; };
+		2FBE99001E6AD69E00796D4F /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE98FF1E6AD69E00796D4F /* ValidationResult.swift */; };
+		2FBE99021E6AD6D000796D4F /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE99011E6AD6D000796D4F /* Validatable.swift */; };
+		2FBE99041E6AD6FD00796D4F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE99031E6AD6FD00796D4F /* StringExtension.swift */; };
+		2FBE99061E6AD72100796D4F /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE99051E6AD72100796D4F /* ValidationRule.swift */; };
+		35370E7BAFBCEB79CC0773556FF81F53 /* Pods-CTValidationTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3155771EC86BF2F54C1CC90B4BE93E93 /* Pods-CTValidationTextField_Example-dummy.m */; };
+		3858AF75D4B29F1CE14EACA7C59A29E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5927D935DE48DF0BF733FB53DF09E664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		6D4D0171A1B7A75ECA1BFFB797394408 /* Pods-CTValidationTextField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DBC317DBBBA8D33A438600C9C48A0CD /* Pods-CTValidationTextField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A2CBE5BD443A973730E8FE16416C363 /* CTValidationTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 261D1E94CF583AB90B67BB46D625B61B /* CTValidationTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B56769C4B092EBEBC84C2B6AEB4E341D /* Pods-CTValidationTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D832BC0A19D9645B9D4DE7E9688D7F0 /* Pods-CTValidationTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB42AB9D6942936B98845AAFB95D711F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		D5A4D8EF46FD64C31AED65F665A264F9 /* Pods-CTValidationTextField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39147CE513FB547CEDF95C054A5163B5 /* Pods-CTValidationTextField_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3194E427A28BB053FF4C2462B8237271 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 038DB9D89CD9D8817C905B85D63E1775;
+			remoteInfo = CTValidationTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0724C9933779E4D5411D6703CC7BB093 /* CTValidationTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CTValidationTextField.modulemap; sourceTree = "<group>"; };
+		086664CC3E6EDA49A8E0F2A3D74E7A52 /* Pods-CTValidationTextField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTValidationTextField_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0D06BCF68678F4A191ABA0FFDA92348F /* Pods-CTValidationTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CTValidationTextField_Tests.modulemap"; sourceTree = "<group>"; };
+		197FD9C0985C3CD428BBCA7E266D7005 /* Pods-CTValidationTextField_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTValidationTextField_Tests-resources.sh"; sourceTree = "<group>"; };
+		261D1E94CF583AB90B67BB46D625B61B /* CTValidationTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTValidationTextField-umbrella.h"; sourceTree = "<group>"; };
+		2D832BC0A19D9645B9D4DE7E9688D7F0 /* Pods-CTValidationTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CTValidationTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
+		2FBE98ED1E6AD53800796D4F /* CTValidationTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTValidationTextField.swift; sourceTree = "<group>"; };
+		2FBE98F21E6AD57A00796D4F /* LettersRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LettersRule.swift; path = Validation/Rules/LettersRule.swift; sourceTree = "<group>"; };
+		2FBE98F41E6AD58B00796D4F /* NumbersRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumbersRule.swift; path = Validation/Rules/NumbersRule.swift; sourceTree = "<group>"; };
+		2FBE98F61E6AD59D00796D4F /* EmailRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmailRule.swift; path = Validation/Rules/EmailRule.swift; sourceTree = "<group>"; };
+		2FBE98F81E6AD5AF00796D4F /* SymbolsRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SymbolsRule.swift; path = Validation/Rules/SymbolsRule.swift; sourceTree = "<group>"; };
+		2FBE98FA1E6AD5BF00796D4F /* MinLengthRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MinLengthRule.swift; path = Validation/Rules/MinLengthRule.swift; sourceTree = "<group>"; };
+		2FBE98FD1E6AD68D00796D4F /* ValidationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidationError.swift; path = Validation/Core/ValidationError.swift; sourceTree = "<group>"; };
+		2FBE98FF1E6AD69E00796D4F /* ValidationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidationResult.swift; path = Validation/Core/ValidationResult.swift; sourceTree = "<group>"; };
+		2FBE99011E6AD6D000796D4F /* Validatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Validation/Core/Validatable.swift; sourceTree = "<group>"; };
+		2FBE99031E6AD6FD00796D4F /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Validation/Core/StringExtension.swift; sourceTree = "<group>"; };
+		2FBE99051E6AD72100796D4F /* ValidationRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidationRule.swift; path = Validation/Core/ValidationRule.swift; sourceTree = "<group>"; };
+		3155771EC86BF2F54C1CC90B4BE93E93 /* Pods-CTValidationTextField_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CTValidationTextField_Example-dummy.m"; sourceTree = "<group>"; };
+		34721B0CE67FEF0458F91EDC61363AF3 /* Pods_CTValidationTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CTValidationTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34DA7914607512A48A2A69AEAC9D49A8 /* Pods-CTValidationTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CTValidationTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		39147CE513FB547CEDF95C054A5163B5 /* Pods-CTValidationTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CTValidationTextField_Tests-dummy.m"; sourceTree = "<group>"; };
+		3DBC317DBBBA8D33A438600C9C48A0CD /* Pods-CTValidationTextField_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CTValidationTextField_Example-umbrella.h"; sourceTree = "<group>"; };
+		482ED7CD792178B07701F742B3A3BDD4 /* CTValidationTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CTValidationTextField-dummy.m"; sourceTree = "<group>"; };
+		4BB52BBBD070ECAA0147D4CFAF545F93 /* Pods-CTValidationTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CTValidationTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		554AD2976EF91697BBFA1C2707365AA4 /* Pods-CTValidationTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CTValidationTextField_Example.modulemap"; sourceTree = "<group>"; };
+		7433BC731B448785D265E00FF0EF8FD2 /* CTValidationTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CTValidationTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACF45D36B5A3902BCED42D2EC04D7A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8049E211BFF7782EDFB2C8A1DEC555DA /* Pods-CTValidationTextField_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CTValidationTextField_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		82DBC6C204D54E8F169C0B68A3505562 /* Pods-CTValidationTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTValidationTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		88CB4A0E72B4E2ACCB64991BEFB4E95E /* Pods_CTValidationTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CTValidationTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A37B494813F9F5B15DCB00DD95BAF1F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A30B5B68DF8949E0DC24731A1077EDD8 /* CTValidationTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTValidationTextField.xcconfig; sourceTree = "<group>"; };
+		AAD7C45FD64383AA7A80C9E868C3C2EB /* Pods-CTValidationTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTValidationTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AC662C2B38FAC49D348A05A3AC9FCF3B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B21FD682ED60E6ACDB468EF20997D3E2 /* Pods-CTValidationTextField_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTValidationTextField_Example-resources.sh"; sourceTree = "<group>"; };
+		BC0B146ADEF9342A450DBDE56B12E8C5 /* Pods-CTValidationTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CTValidationTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BE75BAD0DFDDEB1BB3CB9D706A6758E4 /* Pods-CTValidationTextField_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTValidationTextField_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DDEE63C9A940C2A09771CA65FF33D623 /* Pods-CTValidationTextField_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTValidationTextField_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F71B46368465E1722525E32C99799CE4 /* CTValidationTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTValidationTextField-prefix.pch"; sourceTree = "<group>"; };
+		FD15CDE2F58D6359AE1726B436B9A701 /* Pods-CTValidationTextField_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CTValidationTextField_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		771BB5C1CFB17521A6FBC94C908418B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5927D935DE48DF0BF733FB53DF09E664 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C7F427E318F991DDF2DD6979247855B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB42AB9D6942936B98845AAFB95D711F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3BE35E0CC7E287B8C193D263C3084B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3858AF75D4B29F1CE14EACA7C59A29E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C7C0A91546E78C88F87C40DCA766FA6 /* CTValidationTextField */ = {
+			isa = PBXGroup;
+			children = (
+				741396E49CF0FF6170E25F3CE36A4E62 /* Classes */,
+			);
+			path = CTValidationTextField;
+			sourceTree = "<group>";
+		};
+		2FBE98F11E6AD56500796D4F /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				2FBE98F21E6AD57A00796D4F /* LettersRule.swift */,
+				2FBE98F41E6AD58B00796D4F /* NumbersRule.swift */,
+				2FBE98F61E6AD59D00796D4F /* EmailRule.swift */,
+				2FBE98F81E6AD5AF00796D4F /* SymbolsRule.swift */,
+				2FBE98FA1E6AD5BF00796D4F /* MinLengthRule.swift */,
+			);
+			name = Rules;
+			sourceTree = "<group>";
+		};
+		2FBE98FC1E6AD61200796D4F /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				2FBE98FD1E6AD68D00796D4F /* ValidationError.swift */,
+				2FBE98FF1E6AD69E00796D4F /* ValidationResult.swift */,
+				2FBE99011E6AD6D000796D4F /* Validatable.swift */,
+				2FBE99031E6AD6FD00796D4F /* StringExtension.swift */,
+				2FBE99051E6AD72100796D4F /* ValidationRule.swift */,
+			);
+			name = Validation;
+			sourceTree = "<group>";
+		};
+		3E3FEB5B812C429034B570E001632CA4 /* CTValidationTextField */ = {
+			isa = PBXGroup;
+			children = (
+				2C7C0A91546E78C88F87C40DCA766FA6 /* CTValidationTextField */,
+				50AB17DB692CF421EFCC759A471D919D /* Support Files */,
+			);
+			name = CTValidationTextField;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		50AB17DB692CF421EFCC759A471D919D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0724C9933779E4D5411D6703CC7BB093 /* CTValidationTextField.modulemap */,
+				A30B5B68DF8949E0DC24731A1077EDD8 /* CTValidationTextField.xcconfig */,
+				482ED7CD792178B07701F742B3A3BDD4 /* CTValidationTextField-dummy.m */,
+				F71B46368465E1722525E32C99799CE4 /* CTValidationTextField-prefix.pch */,
+				261D1E94CF583AB90B67BB46D625B61B /* CTValidationTextField-umbrella.h */,
+				9A37B494813F9F5B15DCB00DD95BAF1F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CTValidationTextField";
+			sourceTree = "<group>";
+		};
+		609003FE1E5BB58FED0834D59B39E8C4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C00C4212A53787E2BD2AC7A9C79F4B07 /* Pods-CTValidationTextField_Example */,
+				65E66F4C66364924EB24A98ED6F28919 /* Pods-CTValidationTextField_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		65E66F4C66364924EB24A98ED6F28919 /* Pods-CTValidationTextField_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7ACF45D36B5A3902BCED42D2EC04D7A2 /* Info.plist */,
+				0D06BCF68678F4A191ABA0FFDA92348F /* Pods-CTValidationTextField_Tests.modulemap */,
+				34DA7914607512A48A2A69AEAC9D49A8 /* Pods-CTValidationTextField_Tests-acknowledgements.markdown */,
+				4BB52BBBD070ECAA0147D4CFAF545F93 /* Pods-CTValidationTextField_Tests-acknowledgements.plist */,
+				39147CE513FB547CEDF95C054A5163B5 /* Pods-CTValidationTextField_Tests-dummy.m */,
+				BE75BAD0DFDDEB1BB3CB9D706A6758E4 /* Pods-CTValidationTextField_Tests-frameworks.sh */,
+				197FD9C0985C3CD428BBCA7E266D7005 /* Pods-CTValidationTextField_Tests-resources.sh */,
+				2D832BC0A19D9645B9D4DE7E9688D7F0 /* Pods-CTValidationTextField_Tests-umbrella.h */,
+				82DBC6C204D54E8F169C0B68A3505562 /* Pods-CTValidationTextField_Tests.debug.xcconfig */,
+				AAD7C45FD64383AA7A80C9E868C3C2EB /* Pods-CTValidationTextField_Tests.release.xcconfig */,
+			);
+			name = "Pods-CTValidationTextField_Tests";
+			path = "Target Support Files/Pods-CTValidationTextField_Tests";
+			sourceTree = "<group>";
+		};
+		741396E49CF0FF6170E25F3CE36A4E62 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2FBE98FC1E6AD61200796D4F /* Validation */,
+				2FBE98F11E6AD56500796D4F /* Rules */,
+				2FBE98ED1E6AD53800796D4F /* CTValidationTextField.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				81279A58EECEA680934783D0B45B027C /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				E875918389571547877E8118730CE56B /* Products */,
+				609003FE1E5BB58FED0834D59B39E8C4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		81279A58EECEA680934783D0B45B027C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E3FEB5B812C429034B570E001632CA4 /* CTValidationTextField */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C00C4212A53787E2BD2AC7A9C79F4B07 /* Pods-CTValidationTextField_Example */ = {
+			isa = PBXGroup;
+			children = (
+				AC662C2B38FAC49D348A05A3AC9FCF3B /* Info.plist */,
+				554AD2976EF91697BBFA1C2707365AA4 /* Pods-CTValidationTextField_Example.modulemap */,
+				FD15CDE2F58D6359AE1726B436B9A701 /* Pods-CTValidationTextField_Example-acknowledgements.markdown */,
+				8049E211BFF7782EDFB2C8A1DEC555DA /* Pods-CTValidationTextField_Example-acknowledgements.plist */,
+				3155771EC86BF2F54C1CC90B4BE93E93 /* Pods-CTValidationTextField_Example-dummy.m */,
+				DDEE63C9A940C2A09771CA65FF33D623 /* Pods-CTValidationTextField_Example-frameworks.sh */,
+				B21FD682ED60E6ACDB468EF20997D3E2 /* Pods-CTValidationTextField_Example-resources.sh */,
+				3DBC317DBBBA8D33A438600C9C48A0CD /* Pods-CTValidationTextField_Example-umbrella.h */,
+				086664CC3E6EDA49A8E0F2A3D74E7A52 /* Pods-CTValidationTextField_Example.debug.xcconfig */,
+				BC0B146ADEF9342A450DBDE56B12E8C5 /* Pods-CTValidationTextField_Example.release.xcconfig */,
+			);
+			name = "Pods-CTValidationTextField_Example";
+			path = "Target Support Files/Pods-CTValidationTextField_Example";
+			sourceTree = "<group>";
+		};
+		E875918389571547877E8118730CE56B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7433BC731B448785D265E00FF0EF8FD2 /* CTValidationTextField.framework */,
+				34721B0CE67FEF0458F91EDC61363AF3 /* Pods_CTValidationTextField_Example.framework */,
+				88CB4A0E72B4E2ACCB64991BEFB4E95E /* Pods_CTValidationTextField_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		30BE846FDE16BBA1F34201F644FC4992 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D4D0171A1B7A75ECA1BFFB797394408 /* Pods-CTValidationTextField_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D79E5085691B2EF932E2560BE9F8C2B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56769C4B092EBEBC84C2B6AEB4E341D /* Pods-CTValidationTextField_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53E48F650AB5A3B46B5C1E0E3CF086C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A2CBE5BD443A973730E8FE16416C363 /* CTValidationTextField-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		038DB9D89CD9D8817C905B85D63E1775 /* CTValidationTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C67B4D732ED206A1239DD4FB34279F86 /* Build configuration list for PBXNativeTarget "CTValidationTextField" */;
+			buildPhases = (
+				D739DFF2FE41CE0F14E6D402C408FE7F /* Sources */,
+				D3BE35E0CC7E287B8C193D263C3084B0 /* Frameworks */,
+				F53E48F650AB5A3B46B5C1E0E3CF086C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CTValidationTextField;
+			productName = CTValidationTextField;
+			productReference = 7433BC731B448785D265E00FF0EF8FD2 /* CTValidationTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AEE6201FC1C7CA0529AB0361E3046C1B /* Pods-CTValidationTextField_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3887DA25314923801248CFA434A4AB3E /* Build configuration list for PBXNativeTarget "Pods-CTValidationTextField_Example" */;
+			buildPhases = (
+				677FFFDD996DA507ACC5BB1DACB95A92 /* Sources */,
+				9C7F427E318F991DDF2DD6979247855B /* Frameworks */,
+				30BE846FDE16BBA1F34201F644FC4992 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB82EC5F374313812DB31EB5CDECF9FD /* PBXTargetDependency */,
+			);
+			name = "Pods-CTValidationTextField_Example";
+			productName = "Pods-CTValidationTextField_Example";
+			productReference = 34721B0CE67FEF0458F91EDC61363AF3 /* Pods_CTValidationTextField_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8E0FC6600020F409F308D2028966EC6 /* Pods-CTValidationTextField_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E1ABDE4756F1492DC20177D3ED2A4E2 /* Build configuration list for PBXNativeTarget "Pods-CTValidationTextField_Tests" */;
+			buildPhases = (
+				729FCF10CBF37016E8B3D6B6EF6074C4 /* Sources */,
+				771BB5C1CFB17521A6FBC94C908418B9 /* Frameworks */,
+				D79E5085691B2EF932E2560BE9F8C2B4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CTValidationTextField_Tests";
+			productName = "Pods-CTValidationTextField_Tests";
+			productReference = 88CB4A0E72B4E2ACCB64991BEFB4E95E /* Pods_CTValidationTextField_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					038DB9D89CD9D8817C905B85D63E1775 = {
+						LastSwiftMigration = 0820;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E875918389571547877E8118730CE56B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				038DB9D89CD9D8817C905B85D63E1775 /* CTValidationTextField */,
+				AEE6201FC1C7CA0529AB0361E3046C1B /* Pods-CTValidationTextField_Example */,
+				C8E0FC6600020F409F308D2028966EC6 /* Pods-CTValidationTextField_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		677FFFDD996DA507ACC5BB1DACB95A92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35370E7BAFBCEB79CC0773556FF81F53 /* Pods-CTValidationTextField_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729FCF10CBF37016E8B3D6B6EF6074C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5A4D8EF46FD64C31AED65F665A264F9 /* Pods-CTValidationTextField_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D739DFF2FE41CE0F14E6D402C408FE7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FBE98F51E6AD58B00796D4F /* NumbersRule.swift in Sources */,
+				05452147370F3ABCD54C7FF53274F8AA /* CTValidationTextField-dummy.m in Sources */,
+				2FBE98F71E6AD59D00796D4F /* EmailRule.swift in Sources */,
+				2FBE99001E6AD69E00796D4F /* ValidationResult.swift in Sources */,
+				2FBE98F91E6AD5AF00796D4F /* SymbolsRule.swift in Sources */,
+				2FBE98FB1E6AD5BF00796D4F /* MinLengthRule.swift in Sources */,
+				2FBE98FE1E6AD68D00796D4F /* ValidationError.swift in Sources */,
+				2FBE99041E6AD6FD00796D4F /* StringExtension.swift in Sources */,
+				2FBE98EE1E6AD53800796D4F /* CTValidationTextField.swift in Sources */,
+				2FBE99061E6AD72100796D4F /* ValidationRule.swift in Sources */,
+				2FBE98F31E6AD57A00796D4F /* LettersRule.swift in Sources */,
+				2FBE99021E6AD6D000796D4F /* Validatable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB82EC5F374313812DB31EB5CDECF9FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CTValidationTextField;
+			target = 038DB9D89CD9D8817C905B85D63E1775 /* CTValidationTextField */;
+			targetProxy = 3194E427A28BB053FF4C2462B8237271 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		101AEE863D3BF48913E41FC54389BAEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC0B146ADEF9342A450DBDE56B12E8C5 /* Pods-CTValidationTextField_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CTValidationTextField_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CTValidationTextField_Example/Pods-CTValidationTextField_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CTValidationTextField_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		251EE210EDDF4FFDD771166CBC2DE28E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A30B5B68DF8949E0DC24731A1077EDD8 /* CTValidationTextField.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CTValidationTextField/CTValidationTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CTValidationTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CTValidationTextField/CTValidationTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CTValidationTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3782FBF1B869C374F5491EBD3E3C22EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAD7C45FD64383AA7A80C9E868C3C2EB /* Pods-CTValidationTextField_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CTValidationTextField_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CTValidationTextField_Tests/Pods-CTValidationTextField_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CTValidationTextField_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		80C14EF7B8D8B85D83F27C11A22FE49E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82DBC6C204D54E8F169C0B68A3505562 /* Pods-CTValidationTextField_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CTValidationTextField_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CTValidationTextField_Tests/Pods-CTValidationTextField_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CTValidationTextField_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A33F42D84B435D2BD181923684290797 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A30B5B68DF8949E0DC24731A1077EDD8 /* CTValidationTextField.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CTValidationTextField/CTValidationTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CTValidationTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CTValidationTextField/CTValidationTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CTValidationTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C98D894C863AD449897E08104370D073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 086664CC3E6EDA49A8E0F2A3D74E7A52 /* Pods-CTValidationTextField_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CTValidationTextField_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CTValidationTextField_Example/Pods-CTValidationTextField_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CTValidationTextField_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E1ABDE4756F1492DC20177D3ED2A4E2 /* Build configuration list for PBXNativeTarget "Pods-CTValidationTextField_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80C14EF7B8D8B85D83F27C11A22FE49E /* Debug */,
+				3782FBF1B869C374F5491EBD3E3C22EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3887DA25314923801248CFA434A4AB3E /* Build configuration list for PBXNativeTarget "Pods-CTValidationTextField_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C98D894C863AD449897E08104370D073 /* Debug */,
+				101AEE863D3BF48913E41FC54389BAEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C67B4D732ED206A1239DD4FB34279F86 /* Build configuration list for PBXNativeTarget "CTValidationTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				251EE210EDDF4FFDD771166CBC2DE28E /* Debug */,
+				A33F42D84B435D2BD181923684290797 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module CTValidationTextField {
+  umbrella header "CTValidationTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - CTValidationTextField (0.1.0)
+
+DEPENDENCIES:
+  - CTValidationTextField (from `../`)
+
+EXTERNAL SOURCES:
+  CTValidationTextField:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CTValidationTextField: 878990a337c50959d8316185aeacbd2817e45054
+
+PODFILE CHECKSUM: 7a98e28a6c43945a2bc627e7d7590af9b0933d58
+
+COCOAPODS: 1.1.1
