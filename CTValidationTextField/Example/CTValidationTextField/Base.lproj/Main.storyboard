@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9HW-zb-f67">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,22 +9,139 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Navigation Controller-->
+        <scene sceneID="VrT-LK-Fy4">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CTValidationTextField_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <navigationController id="SN9-dN-AXh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nSs-Eo-nhv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9HW-zb-f67" kind="relationship" relationship="rootViewController" id="RgN-fS-rM9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hP-YH-TLH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-639" y="64"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="w4y-bX-Dd7">
+            <objects>
+                <tableViewController id="9HW-zb-f67" customClass="TableViewController" customModule="CTValidationTextField_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="50" sectionHeaderHeight="18" sectionFooterHeight="18" id="y16-89-YLO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="qtm-rz-v2s">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Jgr-0P-CxI">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jgr-0P-CxI" id="buW-mk-b4u">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ngI-hS-hty" customClass="CTValidationTextField" customModule="CTValidationTextField">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="49"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ngI-hS-hty" secondAttribute="trailing" constant="16" id="HBS-uf-e3K"/>
+                                                <constraint firstItem="ngI-hS-hty" firstAttribute="leading" secondItem="buW-mk-b4u" secondAttribute="leading" constant="16" id="Xfp-yk-cYo"/>
+                                                <constraint firstItem="ngI-hS-hty" firstAttribute="top" secondItem="buW-mk-b4u" secondAttribute="top" id="jcj-Io-Zg4"/>
+                                                <constraint firstAttribute="bottom" secondItem="ngI-hS-hty" secondAttribute="bottom" id="sA4-HL-8ha"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="sQR-If-RPm">
+                                        <rect key="frame" x="0.0" y="85" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sQR-If-RPm" id="eKq-zB-1Zg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dPX-27-Zc4" customClass="CTValidationTextField" customModule="CTValidationTextField">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="59.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dPX-27-Zc4" firstAttribute="leading" secondItem="eKq-zB-1Zg" secondAttribute="leading" constant="16" id="AYt-Z1-3in"/>
+                                                <constraint firstItem="dPX-27-Zc4" firstAttribute="top" secondItem="eKq-zB-1Zg" secondAttribute="top" id="alv-Xo-Ph1"/>
+                                                <constraint firstAttribute="trailing" secondItem="dPX-27-Zc4" secondAttribute="trailing" constant="16" id="fYW-HH-xSA"/>
+                                                <constraint firstAttribute="bottom" secondItem="dPX-27-Zc4" secondAttribute="bottom" id="iwi-ec-gRI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="XK5-T4-YZv">
+                                        <rect key="frame" x="0.0" y="135" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XK5-T4-YZv" id="nOG-Mp-VPD">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xss-qa-7jx" customClass="CTValidationTextField" customModule="CTValidationTextField">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="59.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xss-qa-7jx" firstAttribute="top" secondItem="nOG-Mp-VPD" secondAttribute="top" id="CuN-oc-1Gp"/>
+                                                <constraint firstAttribute="bottom" secondItem="xss-qa-7jx" secondAttribute="bottom" id="RCi-4y-nmv"/>
+                                                <constraint firstAttribute="trailing" secondItem="xss-qa-7jx" secondAttribute="trailing" constant="16" id="S3f-DI-RIJ"/>
+                                                <constraint firstItem="xss-qa-7jx" firstAttribute="leading" secondItem="nOG-Mp-VPD" secondAttribute="leading" constant="16" id="YfY-uC-52y"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2vK-h3-to9">
+                                        <rect key="frame" x="0.0" y="185" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2vK-h3-to9" id="oNh-aU-nqo">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mUR-FO-eqI" customClass="CTValidationTextField" customModule="CTValidationTextField">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="59.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mUR-FO-eqI" firstAttribute="leading" secondItem="oNh-aU-nqo" secondAttribute="leading" constant="16" id="97z-H6-1kg"/>
+                                                <constraint firstAttribute="trailing" secondItem="mUR-FO-eqI" secondAttribute="trailing" constant="16" id="C8e-za-u14"/>
+                                                <constraint firstItem="mUR-FO-eqI" firstAttribute="top" secondItem="oNh-aU-nqo" secondAttribute="top" id="Mrq-23-5RZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="mUR-FO-eqI" secondAttribute="bottom" id="YfW-Y4-Bk7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="9HW-zb-f67" id="naT-dT-mII"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="aJB-ab-AJe"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="mUR-FO-eqI" id="Gjp-wD-iKS"/>
+                        <outlet property="emailTextField" destination="dPX-27-Zc4" id="bmW-2E-TzS"/>
+                        <outlet property="nameTextField" destination="ngI-hS-hty" id="ZPL-9t-cqH"/>
+                        <outlet property="phoneTextField" destination="xss-qa-7jx" id="WcM-UF-uiA"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0h-ii-hvd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="65"/>
         </scene>
     </scenes>
 </document>
