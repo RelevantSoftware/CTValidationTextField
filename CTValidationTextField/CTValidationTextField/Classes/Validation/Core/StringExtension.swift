@@ -12,34 +12,32 @@ extension String: Validatable {
     
     func validate(with rules: [ValidationRule]) -> ValidationResult {
         
-        var isValid = true
-        
+        var errors: [ValidationError] = []
         let requiredRules = rules.filter { $0.actionMode == .required }
+        let overlapingRules = rules.filter { $0.actionMode == .canOverlap }
         
         for rule in requiredRules {
-            if rule.validate(self) != nil {
-                return .invalid([rule.error])
+            if let error = rule.validate(self) {
+                return .invalid([error])
             }
         }
         
-        let overlapingRules = rules.filter { $0.actionMode == .canOverlap }
-        
+        var isValid = true
         for character in self.characters {
             
+            var isChecked = false
+            
             let string = String.init(character)
-            var isCharacterValid = true
             for rule in overlapingRules {
-                if isCharacterValid {
-                    isCharacterValid = rule.validate(string) == nil
+                if isChecked == false {
+                    isValid = rule.validate(string) == nil
+                    isChecked = isValid
                 }
             }
             
-            isValid = isCharacterValid
-            if !isValid { break }
+            if !isValid { return .invalid(overlapingRules.map { $0.error }) }
         }
         
-        let error = overlapingRules.map { $0.error }
-        return !isValid ? .invalid(error) : .valid
+        return .valid
     }
 }
-

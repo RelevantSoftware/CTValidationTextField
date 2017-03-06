@@ -27,27 +27,11 @@ class TableViewController: UITableViewController {
         self.nameTextField?.validationRules = [lettersRule, numbersRule, symbolsRule]
         self.emailTextField?.validationRules = [emailRule, MinLengthRule(min: 7)]
         self.phoneTextField?.validationRules = [numbersRule, MinLengthRule(min: 8),
-            SymbolsRule(symbols: ["+"])]
+            SymbolsRule(symbols: ["+"], mode: .canOverlap)]
         self.addressTextField?.validationRules = [
             lettersRule, numbersRule,
             SymbolsRule(symbols: ["#", "(", ")", "\\", ".", ",", "-", " "],
             mode: .canOverlap)
         ]
-        
-        self.nameTextField?.updateAction = { (text) in
-            self.nameTextField?.text = text
-        }
-        
-        self.emailTextField?.updateAction = { (text) in
-            self.emailTextField?.text = text
-        }
-        
-        self.phoneTextField?.updateAction = { (text) in
-            self.phoneTextField?.text = text
-        }
-        
-        self.addressTextField?.updateAction = { (text) in
-            self.addressTextField?.text = text
-        }
     }
 }

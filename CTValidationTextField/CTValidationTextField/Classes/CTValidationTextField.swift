@@ -76,11 +76,13 @@ open class CTValidationTextField: UITextField, UITextFieldDelegate {
     //MARK: UITextFieldDelegate methods
     
     public func textField(_ textField: UITextField,
-                   shouldChangeCharactersIn range: NSRange,
-                   replacementString string: String) -> Bool {
+        shouldChangeCharactersIn range: NSRange,
+        replacementString string: String) -> Bool {
         let text = textField.text ?? ""
         let nsString = NSString(string: text)
         let newText = nsString.replacingCharacters(in: range, with: string)
+        self.text = newText
+        
         self.updateAction?(newText)
         if self.mode == .onEditing && self.validationRules.count > 0 {
             self.validate(newText)
