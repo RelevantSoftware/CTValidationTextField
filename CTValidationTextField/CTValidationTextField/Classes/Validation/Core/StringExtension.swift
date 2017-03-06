@@ -27,9 +27,9 @@ extension String: Validatable {
         for character in self.characters {
             
             let string = String.init(character)
-            var isCharacterValid = false
+            var isCharacterValid = true
             for rule in overlapingRules {
-                if !isCharacterValid {
+                if isCharacterValid {
                     isCharacterValid = rule.validate(string) == nil
                 }
             }
