@@ -73,6 +73,11 @@ open class CTValidationTextField: UITextField, UITextFieldDelegate {
         }
     }
     
+    open func setValidation(_ isValid: Bool, with message: String = "") {
+        self.errorLabel.isHidden = isValid
+        self.errorLabel.text = message
+    }
+    
     //MARK: UITextFieldDelegate methods
     
     public func textField(_ textField: UITextField,
