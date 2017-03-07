@@ -16,15 +16,17 @@ public enum ValidationError: Error {
     case email
     case phone
     case minLength(Int)
+    case notEmpty
     
     func message() -> String {
         switch self {
-        case .letters: return "letters"
-        case .numbers: return "numbers"
-        case .symbols(let symbols): return "[\(symbols.joined(separator: ", "))] symbols"
-        case .email: return "E-mail"
-        case .phone: return "Phone"
-        case .minLength(let min): return "minimum length: (\(min))"
+            case .letters: return "letters"
+            case .numbers: return "numbers"
+            case .symbols(let symbols): return "[\(symbols.joined(separator: ", "))] symbols"
+            case .email: return "E-mail"
+            case .phone: return "Phone"
+            case .minLength(let min): return "minimum length: (\(min))"
+            case .notEmpty: return "field is required"
         }
     }
 }

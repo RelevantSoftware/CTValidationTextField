@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		05452147370F3ABCD54C7FF53274F8AA /* CTValidationTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 482ED7CD792178B07701F742B3A3BDD4 /* CTValidationTextField-dummy.m */; };
+		2F19AE471E6EC0D600162C5E /* NotEmptyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F19AE461E6EC0D600162C5E /* NotEmptyRule.swift */; };
 		2FBE98EE1E6AD53800796D4F /* CTValidationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE98ED1E6AD53800796D4F /* CTValidationTextField.swift */; };
 		2FBE98F31E6AD57A00796D4F /* LettersRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE98F21E6AD57A00796D4F /* LettersRule.swift */; };
 		2FBE98F51E6AD58B00796D4F /* NumbersRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE98F41E6AD58B00796D4F /* NumbersRule.swift */; };
@@ -46,6 +47,7 @@
 		197FD9C0985C3CD428BBCA7E266D7005 /* Pods-CTValidationTextField_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CTValidationTextField_Tests-resources.sh"; sourceTree = "<group>"; };
 		261D1E94CF583AB90B67BB46D625B61B /* CTValidationTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTValidationTextField-umbrella.h"; sourceTree = "<group>"; };
 		2D832BC0A19D9645B9D4DE7E9688D7F0 /* Pods-CTValidationTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CTValidationTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
+		2F19AE461E6EC0D600162C5E /* NotEmptyRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotEmptyRule.swift; path = Validation/Rules/NotEmptyRule.swift; sourceTree = "<group>"; };
 		2FBE98ED1E6AD53800796D4F /* CTValidationTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTValidationTextField.swift; sourceTree = "<group>"; };
 		2FBE98F21E6AD57A00796D4F /* LettersRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LettersRule.swift; path = Validation/Rules/LettersRule.swift; sourceTree = "<group>"; };
 		2FBE98F41E6AD58B00796D4F /* NumbersRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumbersRule.swift; path = Validation/Rules/NumbersRule.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				2FBE98F61E6AD59D00796D4F /* EmailRule.swift */,
 				2FBE98F81E6AD5AF00796D4F /* SymbolsRule.swift */,
 				2FBE98FA1E6AD5BF00796D4F /* MinLengthRule.swift */,
+				2F19AE461E6EC0D600162C5E /* NotEmptyRule.swift */,
 			);
 			name = Rules;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				2FBE99041E6AD6FD00796D4F /* StringExtension.swift in Sources */,
 				2FBE98EE1E6AD53800796D4F /* CTValidationTextField.swift in Sources */,
 				2FBE99061E6AD72100796D4F /* ValidationRule.swift in Sources */,
+				2F19AE471E6EC0D600162C5E /* NotEmptyRule.swift in Sources */,
 				2FBE98F31E6AD57A00796D4F /* LettersRule.swift in Sources */,
 				2FBE99021E6AD6D000796D4F /* Validatable.swift in Sources */,
 			);
