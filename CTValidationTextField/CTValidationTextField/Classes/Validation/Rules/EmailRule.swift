@@ -19,7 +19,7 @@ public struct EmailRule: ValidationRule {
     
     public func validate(_ text: String) -> ValidationError? {
         if text.isEmpty { return nil }
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{1,}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: text) ? nil : self.error
     }
