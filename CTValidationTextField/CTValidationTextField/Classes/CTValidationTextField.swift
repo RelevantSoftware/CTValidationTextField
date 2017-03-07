@@ -63,6 +63,10 @@ open class CTValidationTextField: UITextField, UITextFieldDelegate {
         self.errorLabel.numberOfLines = 0
     }
     
+    open func validate() {
+        self.validate(self.text ?? "")
+    }
+    
     private func validate(_ text: String) {
         if let errorMessage = text.validate(
             with: self.validationRules).message() {
