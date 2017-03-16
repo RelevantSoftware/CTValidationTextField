@@ -16,6 +16,7 @@ public enum ValidationError: Error {
     case email
     case phone
     case minLength(Int)
+    case maxLength(Int)
     case notEmpty
     
     func message() -> String {
@@ -26,6 +27,7 @@ public enum ValidationError: Error {
             case .email: return "E-mail"
             case .phone: return "Phone"
             case .minLength(let min): return "minimum length: (\(min))"
+            case .maxLength(let max): return "maximum length: (\(max))"
             case .notEmpty: return "field is required"
         }
     }

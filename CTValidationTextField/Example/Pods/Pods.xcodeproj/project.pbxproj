@@ -20,6 +20,7 @@
 		2FBE99021E6AD6D000796D4F /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE99011E6AD6D000796D4F /* Validatable.swift */; };
 		2FBE99041E6AD6FD00796D4F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE99031E6AD6FD00796D4F /* StringExtension.swift */; };
 		2FBE99061E6AD72100796D4F /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE99051E6AD72100796D4F /* ValidationRule.swift */; };
+		2FFDD4D31E7AE5190073D1A7 /* MaxLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFDD4D21E7AE5190073D1A7 /* MaxLengthRule.swift */; };
 		35370E7BAFBCEB79CC0773556FF81F53 /* Pods-CTValidationTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3155771EC86BF2F54C1CC90B4BE93E93 /* Pods-CTValidationTextField_Example-dummy.m */; };
 		3858AF75D4B29F1CE14EACA7C59A29E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		5927D935DE48DF0BF733FB53DF09E664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -59,6 +60,7 @@
 		2FBE99011E6AD6D000796D4F /* Validatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = Validation/Core/Validatable.swift; sourceTree = "<group>"; };
 		2FBE99031E6AD6FD00796D4F /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Validation/Core/StringExtension.swift; sourceTree = "<group>"; };
 		2FBE99051E6AD72100796D4F /* ValidationRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidationRule.swift; path = Validation/Core/ValidationRule.swift; sourceTree = "<group>"; };
+		2FFDD4D21E7AE5190073D1A7 /* MaxLengthRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaxLengthRule.swift; path = Validation/Rules/MaxLengthRule.swift; sourceTree = "<group>"; };
 		3155771EC86BF2F54C1CC90B4BE93E93 /* Pods-CTValidationTextField_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CTValidationTextField_Example-dummy.m"; sourceTree = "<group>"; };
 		34721B0CE67FEF0458F91EDC61363AF3 /* Pods_CTValidationTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CTValidationTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34DA7914607512A48A2A69AEAC9D49A8 /* Pods-CTValidationTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CTValidationTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				2FBE98F81E6AD5AF00796D4F /* SymbolsRule.swift */,
 				2FBE98FA1E6AD5BF00796D4F /* MinLengthRule.swift */,
 				2F19AE461E6EC0D600162C5E /* NotEmptyRule.swift */,
+				2FFDD4D21E7AE5190073D1A7 /* MaxLengthRule.swift */,
 			);
 			name = Rules;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				2FBE98FB1E6AD5BF00796D4F /* MinLengthRule.swift in Sources */,
 				2FBE98FE1E6AD68D00796D4F /* ValidationError.swift in Sources */,
 				2FBE99041E6AD6FD00796D4F /* StringExtension.swift in Sources */,
+				2FFDD4D31E7AE5190073D1A7 /* MaxLengthRule.swift in Sources */,
 				2FBE98EE1E6AD53800796D4F /* CTValidationTextField.swift in Sources */,
 				2FBE99061E6AD72100796D4F /* ValidationRule.swift in Sources */,
 				2F19AE471E6EC0D600162C5E /* NotEmptyRule.swift in Sources */,
