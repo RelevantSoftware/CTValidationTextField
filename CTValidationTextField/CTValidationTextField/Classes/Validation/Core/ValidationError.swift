@@ -21,14 +21,14 @@ public enum ValidationError: Error {
     
     func message() -> String {
         switch self {
-            case .letters: return "letters"
-            case .numbers: return "numbers"
-            case .symbols(let symbols): return "[\(symbols.joined(separator: ", "))] symbols"
-            case .email: return "E-mail"
-            case .phone: return "Phone"
-            case .minLength(let min): return "minimum length: (\(min))"
-            case .maxLength(let max): return "maximum length: (\(max))"
-            case .notEmpty: return "field is required"
+            case .letters: return NSLocalizedString("letters", comment: "")
+            case .numbers: return NSLocalizedString("numbers", comment: "")
+            case .symbols(let symbols): return "[\(symbols.joined(separator: ", "))] \(NSLocalizedString("symbols", comment: ""))"
+            case .email: return NSLocalizedString("E-mail", comment: "")
+            case .phone: return NSLocalizedString("Phone", comment: "")
+            case .minLength(let min): return "\(NSLocalizedString("minimum length", comment: "")): (\(min))"
+            case .maxLength(let max): return "\(NSLocalizedString("maximum length", comment: "")): (\(max))"
+            case .notEmpty: return NSLocalizedString("field is required", comment: "")
         }
     }
 }

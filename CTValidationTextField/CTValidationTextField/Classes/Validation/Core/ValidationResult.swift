@@ -17,7 +17,7 @@ enum ValidationResult: Equatable {
         switch self {
         case .invalid(let errors):
             let string = errors.map { $0.message() }.joined(separator: ", ")
-            return "Allowed format:\(string)"
+            return "\(NSLocalizedString("Allowed format", comment: "")):\(string)"
         default: return nil
         }
     }

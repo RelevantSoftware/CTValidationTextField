@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Pods
+
+  Created by Taras Chernyshenko on 5/12/17.
+
+*/
+
+"letters" = "letters";
+"numbers" = "numbers";
+"symbols" = "symbols";
+"E-mail" = "E-mail";
+"Phone" = "Phone";
+"minimum length" = "minimum length";
+"maximum length" = "maximum length";
+"field is required" = "field is required";
+"Allowed format" = "Allowed format";

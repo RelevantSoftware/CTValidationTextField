@@ -49,6 +49,9 @@
 		261D1E94CF583AB90B67BB46D625B61B /* CTValidationTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTValidationTextField-umbrella.h"; sourceTree = "<group>"; };
 		2D832BC0A19D9645B9D4DE7E9688D7F0 /* Pods-CTValidationTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CTValidationTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
 		2F19AE461E6EC0D600162C5E /* NotEmptyRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotEmptyRule.swift; path = Validation/Rules/NotEmptyRule.swift; sourceTree = "<group>"; };
+		2F2E4A721EC5D51800EE8342 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2F2E4A741EC5D52900EE8342 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2F2E4A751EC5D55200EE8342 /* pl-PL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pl-PL"; path = "pl-PL.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		2FBE98ED1E6AD53800796D4F /* CTValidationTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTValidationTextField.swift; sourceTree = "<group>"; };
 		2FBE98F21E6AD57A00796D4F /* LettersRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LettersRule.swift; path = Validation/Rules/LettersRule.swift; sourceTree = "<group>"; };
 		2FBE98F41E6AD58B00796D4F /* NumbersRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumbersRule.swift; path = Validation/Rules/NumbersRule.swift; sourceTree = "<group>"; };
@@ -119,9 +122,18 @@
 		2C7C0A91546E78C88F87C40DCA766FA6 /* CTValidationTextField */ = {
 			isa = PBXGroup;
 			children = (
+				2F2E4A6F1EC5D37F00EE8342 /* Localization */,
 				741396E49CF0FF6170E25F3CE36A4E62 /* Classes */,
 			);
 			path = CTValidationTextField;
+			sourceTree = "<group>";
+		};
+		2F2E4A6F1EC5D37F00EE8342 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				2F2E4A731EC5D51800EE8342 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		2FBE98F11E6AD56500796D4F /* Rules */ = {
@@ -376,6 +388,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				nb,
+				"pl-PL",
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = E875918389571547877E8118730CE56B /* Products */;
@@ -437,6 +451,19 @@
 			targetProxy = 3194E427A28BB053FF4C2462B8237271 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F2E4A731EC5D51800EE8342 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F2E4A721EC5D51800EE8342 /* en */,
+				2F2E4A741EC5D52900EE8342 /* nb */,
+				2F2E4A751EC5D55200EE8342 /* pl-PL */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		101AEE863D3BF48913E41FC54389BAEA /* Release */ = {
@@ -582,6 +609,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -622,6 +650,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
