@@ -30,6 +30,6 @@ public struct MaxLengthRule: ValidationRule {
     
     public func validate(_ text: String) -> ValidationError? {
         if text.isEmpty || self.maxLength == -1 { return nil }
-        return text.characters.count > self.maxLength ? self.error : nil
+        return text.count > self.maxLength ? self.error : nil
     }
 }
