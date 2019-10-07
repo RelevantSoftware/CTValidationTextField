@@ -30,6 +30,6 @@ public struct MinLengthRule: ValidationRule {
     
     public func validate(_ text: String) -> ValidationError? {
         if text.isEmpty { return nil }
-        return text.characters.count < self.minLength ? self.error : nil
+        return text.count < self.minLength ? self.error : nil
     }
 }

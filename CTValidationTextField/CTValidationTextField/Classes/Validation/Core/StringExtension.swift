@@ -12,7 +12,6 @@ extension String: Validatable {
     
     func validate(with rules: [ValidationRule]) -> ValidationResult {
         
-        var errors: [ValidationError] = []
         let requiredRules = rules.filter { $0.actionMode == .required }
         let overlapingRules = rules.filter { $0.actionMode == .canOverlap }
         
@@ -23,7 +22,7 @@ extension String: Validatable {
         }
         
         var isValid = true
-        for character in self.characters {
+        for character in self {
             
             var isChecked = false
             
